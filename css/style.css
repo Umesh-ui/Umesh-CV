@@ -107,6 +107,14 @@ section.profile .left p {
   color: var(--mild);
   font-size: 14px;
 }
+section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
+  background: linear-gradient(to right, var(--secondary), var(--success));
+}
+section.profile .left p b {
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+
 section.profile .img {
   width: 128px;
   height: 128px;

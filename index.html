@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./plugins/headline/headline.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/unicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
@@ -33,7 +34,7 @@
 
     <!-- section 1 -->
     <main class="container">
-        <section class="profile">
+        <section class="profile" id="profile-ripple">  <!---- ripple is for water effect-->
 
             <div class="left">
                 <div class="avtar">
@@ -44,7 +45,7 @@
                 </div>
                 <div>
                 <h2>Umesh Itukade</h2>
-                <p class="cd-headline loadin-bar"> 
+                <p class="cd-headline loading-bar"> 
                     <span class="cd-words-wrapper">
                         <b class="is-visible">UI/UX Designer</b>
                         <b>Web Developer</b>
@@ -79,7 +80,9 @@
         </section>
     </main>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./plugins/headline/ripples.js"></script>
+    <script src="./plugins/headline/headline.js"></script>
 
     <script src="./js/app.js"></script>
 </body>
