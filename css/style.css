@@ -244,3 +244,29 @@ section.about .content .left button {
 section.about .content .left button:hover {
   color: var(--pure);
 }
+section.about .content .right p {
+  line-height: 1.6rem;
+  font-size: 14px;
+  color: var(--ternary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.1px;
+}
+section.about .content .right p span:nth-child(1) {
+  width: 130px;
+  float: left;
+  font-weight: 500;
+  display: block;
+  padding-right: 10px;
+  position: relative;
+}
+section.about .content .right p span:nth-child(2) {
+  padding-left: 150px;
+  display: block;
+}
+
+section.about .content .right p span:nth-child(1):after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
