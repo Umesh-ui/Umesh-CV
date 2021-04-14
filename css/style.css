@@ -18,6 +18,8 @@
   --success: #1ecab8;
   --danger: #f1646c;
   --dark-blue: #28365f;
+  --dark-gray: #171f33;
+  --yellow: #f3c74d;
 }
 
 /* reset all */
@@ -364,4 +366,39 @@ section.skills .skill-wrapper .skill-box .progress .progress-bar .tooltip {
   color: var(--ternary);
   font-size: 16px;
   text-transform: uppercase;
+}
+
+/* Counter Animation */
+section.counter-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: var(--dark-gray);
+}
+section.counter-wrapper > div {
+  display: flex;
+  align-items: center;
+}
+section.counter-wrapper i {
+  font-size: 42px;
+  margin-right: 5px;
+}
+section.counter-wrapper > div:nth-child(1) i {
+  color: var(--yellow);
+}
+section.counter-wrapper > div:nth-child(2) i {
+  color: var(--success);
+}
+section.counter-wrapper > div:nth-child(3) i {
+  color: var(--dribble);
+}
+section.counter-wrapper > div h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--fade);
+  margin-bottom: 8px;
+}
+section.counter-wrapper > div h5 {
+  font-size: 14px;
+  color: var(--fade);
 }
