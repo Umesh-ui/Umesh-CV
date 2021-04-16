@@ -129,7 +129,8 @@ section.profile .img {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: fill;
+  filter: grayscale(60);
 }
 section.profile .left .avtar {
   position: relative;
@@ -684,5 +685,21 @@ footer {
   section.contact .contact-wrapper .right .form-group {
     grid-template-columns: 1fr;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  section.work .wrapper .portfolio .portfolio-wrapper {
+    grid-template-columns: 1fr;
+    gap: none;
+
+    /* display: block; */
+  }
+  section.work .wrapper .portfolio .portfolio-wrapper img {
+    text-align: center;
   }
 }
